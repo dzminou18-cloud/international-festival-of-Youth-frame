@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>International Festival of Youth - Frame Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>INTERNATIONAL<br>FESTIVAL OF YOUTH</h1>
+            <p class="subtitle">🇷🇺 RUSSIA 2026 🇷🇺</p>
+        </div>
+
+        <div class="canvas-holder">
+            <canvas id="main-canvas" width="350" height="350"></canvas>
+        </div>
+        
+        <div class="instructions">
+            ↔ Drag to reposition | ↗ Scale corners to fit perfectly
+        </div>
+
+        <div class="controls">
+            <button class="btn-control btn-rotate" id="rotate-btn">🔄 ROTATE IMAGE</button>
+            <button class="btn-control btn-remove" id="clear-btn">✕ REMOVE PHOTO</button>
+        </div>
+
+        <label class="action-btn btn-select" for="photo-input">📸 CHOOSE YOUR PHOTO</label>
+        <input type="file" id="photo-input" style="display:none" accept="image/*">
+        
+        <button class="action-btn btn-save" id="save-btn">💾 DOWNLOAD CAMPAIGN PHOTO</button>
+
+        <div class="footer">
+            POWERED BY: <span class="author">Boussaid Mohammed El Amine</span> 🇩🇿
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
